@@ -6,7 +6,7 @@ A little go library for getting oauth tokens from CF UAA
 Usage:
 
 Given the parameters needed to fill the OAuthConfig struct:
-```golang
+```go
 type OAuthConfig struct {
 	TokenEndpoint string `yaml:"token_endpoint"`
 	ClientName    string `yaml:"client_name"`
@@ -17,7 +17,7 @@ type OAuthConfig struct {
 Create a pointer to the OAuthConfig
 
 This pointer is passed into the `NewTokenFetcher` function
-```golang
+```go
 func NewTokenFetcher(config *OAuthConfig) *Fetcher {
 	return &Fetcher{
 		config: config,
@@ -28,7 +28,7 @@ func NewTokenFetcher(config *OAuthConfig) *Fetcher {
 ---------
 
 To use the TokenFetcher after passing in your OAuthConfig, simply call `FetchToken`
-```golang
+```go
 fetcher := NewTokenFetcher(cfg)
 token, err := fetcher.FetchToken()
 ```
