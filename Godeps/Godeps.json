@@ -7,7 +7,7 @@
 	"Deps": [
 		{
 			"ImportPath": "github.com/cloudfoundry-incubator/trace-logger",
-			"Rev": "db7feda4944cc58be58a6769fd5ee81a279e5daf"
+			"Rev": "24964ef4dbb527a373d4db141cbbd41eb21a56f9"
 		},
 		{
 			"ImportPath": "github.com/onsi/ginkgo",
