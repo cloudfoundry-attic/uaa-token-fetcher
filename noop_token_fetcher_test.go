@@ -11,7 +11,7 @@ var _ = Describe("NoopTokenFetcher", func() {
 
 	Context("New", func() {
 
-		var fetcher *NoOpTokenFetcher
+		var fetcher TokenFetcher
 
 		BeforeEach(func() {
 			fetcher = NewNoOpTokenFetcher()
@@ -23,7 +23,7 @@ var _ = Describe("NoopTokenFetcher", func() {
 		})
 
 		It("returns an empty access token", func() {
-			token, err := fetcher.FetchToken()
+			token, err := fetcher.FetchToken(true)
 			Expect(err).NotTo(HaveOccurred())
 			Expect(token.AccessToken).To(BeEmpty())
 		})
