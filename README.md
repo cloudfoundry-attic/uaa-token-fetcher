@@ -1,4 +1,7 @@
-#CF UAA Token Fetcher
+#**Deprecated** in favor of [uaa-go-client](https://github.com/cloudfoundry-incubator/uaa-go-client)
+We are no longer actively maintaining this repository.
+
+##CF UAA Token Fetcher
 A go library for getting oauth tokens (client credentials flow) from CF UAA.
 
 1. It caches access token until its expiration and returns the cached token unless otherwise specified
